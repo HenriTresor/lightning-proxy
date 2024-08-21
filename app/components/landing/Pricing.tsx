@@ -51,7 +51,7 @@ function Pricing({ }: Props) {
                 <div className='md:grid grid-cols-2 gap-5'>
                     {
                         plans.map((plan, index) => (
-                            <div key={index} className={`${plan?.pin && ' bg-[#f9b3283b] border-2 border-[#f9b228] hover:border-[#F9B228] hover:bg-[#f9b3283b] '} rounded-xl p-5 w-[80%]  flex flex-col justify-around gap-5 cursor-pointer  hover:bg-[#1673ff1d]  border-2 border-white hover:border-[#1675FF]`}>
+                            <div key={index} className={`rounded-xl p-5 w-[80%]  flex flex-col justify-around gap-5 cursor-pointer  hover:bg-[#1673ff1d]  border-2 border-white hover:border-[#1675FF] ${plan?.pin && ' bg-[#f9b3283b] border-2 border-[#f9b228] hover:border-[#F9B228] hover:bg-[#f9b3283b] '} `}>
                                 <div className='flex items-center gap-5 '>
                                     <div className='flex flex-col gap-5 text-[0.9rem] '>
                                         <h1 className={`font-bold ${plan.pin && 'text-[#F9B228]'}`}>{plan.time}</h1>
@@ -60,7 +60,7 @@ function Pricing({ }: Props) {
                                     <p className='font-bold'>{plan.price}</p>
                                 </div>
 
-                                <button className={`${plan.pin && 'bg-[#f9b32800] border-2 border-[#F9B228]  text-[#5a5a5a] hover:text-white hover:bg-[#F9B228]'} rounded-xl bg-[#1673ff27]  text-[#1675FF] hover:text-white hover:bg-[#1675ff] duration-500`}>
+                                <button className={`${plan.pin && ' bg-[#f9b32800] border-2 border-[#F9B228]  text-[#5a5a5a] hover:text-white hover:bg-[#F9B228]'} rounded-xl bg-[#1673ff27]  text-[#1675FF] hover:text-white hover:bg-[#1675ff] duration-500`}>
                                     Buy Now
                                 </button>
                             </div>
