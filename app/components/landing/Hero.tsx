@@ -6,8 +6,8 @@ type Props = {}
 
 function Hero({ }: Props) {
     return (
-        <div className='flex p-4 md:p-6 items-center justify-center gap-10 flex-col md:flex-row'>
-            <div className='w-full md:w-1/2 flex flex-col gap-6 mt-10 justify-between'>
+        <div className='flex  p-10 pl-20 pr-20 md:p-6 items-center justify-center gap-10 flex-col md:flex-row'>
+            <div className='w-full md:w-[40%] flex flex-col gap-6 mt-10 justify-between'>
                 <Image
                     src={"/mostComplex.svg"}
                     width={200}
@@ -15,7 +15,7 @@ function Hero({ }: Props) {
                     alt='most complex proxt network'
                     className='w-full'
                 />
-                <p>Providing Top-Tier Proxies designed to ensure a high success rate on any task, be it easy or difficult.</p>
+                <p className='text-[18px] text-[#5a5a5a]'>Providing Top-Tier Proxies designed to ensure a high success rate on any task, be it easy or difficult.</p>
 
                 <div className='flex items-center justify-normal gap-4'>
                     <button className='filled'>Get Started <ArrowRight /> </button>
@@ -34,7 +34,7 @@ function Hero({ }: Props) {
                 width={200}
                 height={200}
                 alt={"hero"}
-                className='w-[70%]'
+                className='w-[50%]'
             />
         </div>
     )

@@ -14,19 +14,19 @@ const listItems = [
 
 function Header({ }: Props) {
     return (
-        <div className='header w-full p-4 flex items-center justify-between  rounded-2xl sticky top-0 z-50 bg-white'>
+        <div className='header w-full p-6 flex items-center justify-between   sticky top-0 z-50 bg-white pl-16 pr-16'>
             <Image
                 src={"/logo.svg"}
-                width={100}
-                height={100}
+                width={200}
+                height={200}
                 alt='logo'
             />
 
-            <div className='hidden md:block'>
+            <div className='hidden md:flex gap-5'>
                 {
                     listItems.map((item, index) => {
                         return (
-                            <Link className='text-[#1E1E1E] p-3' href={item.link} key={item.name}>
+                            <Link className='text-[#1E1E1E] p-3 hover:bg-[#1673ff13] duration-500 rounded-full ' href={item.link} key={item.name}>
                                 {item.name}
                             </Link>
                         )

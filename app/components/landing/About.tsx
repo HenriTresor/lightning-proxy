@@ -51,25 +51,25 @@ function About({ }: Props) {
         className='w-full md:w-[50%]'
       />
 
-      <div className='w-full md:grid grid-cols-3 p-5 gap-5'>
+      <div className='w-full md:grid grid-cols-3 p-5 gap-2 mt-5 '>
         {
           about.map((item, index) => (
-            <div key={index} className=' p-4 rounded-xl flex flex-col gap-2 text-[0.9rem] hover:bg-[#1673ff1d] cursor-pointer border-2 border-white hover:border-[#1675FF]'>
-              <div className={`bg-[#1673ff3b] p-2 w-[30px] h-[30px] grid place-content-center rounded-md }`}>
+            <div key={index} className=' p-6 rounded-xl flex flex-col gap-2 text-[0.9rem] hover:bg-[#1673ff1d] cursor-pointer border-2 border-white hover:border-[#1675FF] w-[85%]'>
+              <div className={`bg-[#1673ff3b] p-2 w-[50px] h-[50px] grid place-content-center rounded-md }`}>
                 <Image
                   src={item.image}
-                  width={20}
-                  height={20}
+                  width={30}
+                  height={30}
                   className=''
                   alt={item.title}
                 />
               </div>
 
-              <h1 className='font-bold'>
+              <h1 className='font-bold text-[20px]'>
                 {item.title}
               </h1>
 
-              <p className='text-[#545454]'>
+              <p className='text-[#545454] text-[14px]'>
                 {item.description}
               </p>
             </div>

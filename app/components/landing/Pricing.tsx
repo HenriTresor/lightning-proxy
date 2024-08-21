@@ -44,14 +44,14 @@ function Pricing({ }: Props) {
                 width={100}
                 height={100}
                 alt={'price'}
-                className='w-full md:w-[50%] cursor-pointer'
+                className='w-full md:w-[32%] cursor-pointer'
             />
 
             <div className='w-full p-5 flex gap-5 flex-col-reverse md:flex-row'>
                 <div className='md:grid grid-cols-2 gap-5'>
                     {
                         plans.map((plan, index) => (
-                            <div key={index} className={`${plan?.pin && ' bg-[#f9b3283b] border-2 border-[#F9B228]  hover:bg-[#f9b3283b] hover:border-[#F9B228]'} rounded-xl p-5 w-full  flex flex-col justify-center gap-5 cursor-pointer  hover:bg-[#1673ff1d]  border-2 border-white hover:border-[#1675FF]`}>
+                            <div key={index} className={`${plan?.pin && ' bg-[#f9b3283b] border-2 border-[#f9b228] hover:border-[#F9B228] hover:bg-[#f9b3283b] '} rounded-xl p-5 w-[80%]  flex flex-col justify-around gap-5 cursor-pointer  hover:bg-[#1673ff1d]  border-2 border-white hover:border-[#1675FF]`}>
                                 <div className='flex items-center gap-5 '>
                                     <div className='flex flex-col gap-5 text-[0.9rem] '>
                                         <h1 className={`font-bold ${plan.pin && 'text-[#F9B228]'}`}>{plan.time}</h1>
@@ -71,20 +71,20 @@ function Pricing({ }: Props) {
 
                 <div className='w-full md:w-[30%] flex flex-col gap-5'>
                     <div className=' p-10 rounded-xl flex flex-col gap-2 text-[0.9rem] bg-[#1673ff1d] cursor-pointer border-2 border-white border-[#1675FF] text-[#545454]'>
-                        <h1 className='font-bold text-black'>
+                        <h1 className='font-extrabold text-[22px] text-black'>
                             IPv6
                         </h1>
 
-                        <p className='text-[#545454]'>
+                        <p className='text-[#545454] text-[16px]'>
                             Duis at est et tellus suscipit interdum non id mauris. Aenean tempor congue tortor, vitae luctus purus mollis at. Mauris non consectetur dolor.
                         </p>
 
-                        <h1 className='font-bold'>ALL PLANS INCLUDE</h1>
+                        <h1 className='font-bold text-[16px]'>ALL PLANS INCLUDE</h1>
 
                         <ul>
                             {
                                 listItems.map((item, index) => (
-                                    <li key={index} className='flex items-center gap-2'>
+                                    <li key={index} className='flex items-center gap-2 text-[16px]'>
                                         <Check stroke={'#1675FF'} /> {item}
                                     </li>
                                 ))
@@ -94,7 +94,7 @@ function Pricing({ }: Props) {
 
                     <div className='flex items-center p-5 border-2 rounded-xl gap-5'>
                         <h1 className='font-bold'>For Any Customer Plans </h1>
-                        <button className='bg-[#1673ff27]  text-[#1675FF] hover:text-white hover:bg-[#1675ff] duration-500 font-bold p-2 text-[0.9rem] flex items-center justify-normal gap-4 rounded-xl'>Contact Us <ArrowRight /> </button>
+                        <button className='bg-[#1673ff27]  text-[#1675FF] hover:text-white hover:bg-[#1675ff] duration-500 font-extrabold p-2 text-[0.9rem] flex items-center justify-normal gap-4 rounded-xl'>Contact Us <ArrowRight /> </button>
 
                     </div>
                 </div>
