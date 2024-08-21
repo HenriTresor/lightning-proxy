@@ -14,12 +14,13 @@ const listItems = [
 
 function Header({ }: Props) {
     return (
-        <div className='header w-full p-6 flex items-center justify-between   sticky top-0 z-50 bg-white pl-16 pr-16'>
+        <div className='header w-full p-6 flex items-center justify-between  sticky top-0 z-50 bg-white pl-16 pr-16'>
             <Image
                 src={"/logo.svg"}
                 width={200}
                 height={200}
                 alt='logo'
+                className='md:w-[200px]  w-[50px]'
             />
 
             <div className='hidden md:flex gap-5'>
