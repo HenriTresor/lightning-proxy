@@ -10,10 +10,18 @@
 }
 
 button{
-  @apply p-2 cursor-pointer
+  @apply p-2 cursor-pointer 
 }
 
 .header {
   box-shadow: 0px 0px 10px lightgrey;
 }
 
+.filled {
+  @apply bg-[#1675FF] text-white font-bold rounded-2xl p-4 flex items-center justify-normal gap-4  hover:bg-black duration-500 hover:text-white
+}
+
+
+.outlined {
+  @apply font-bold hidden sm:block p-3 rounded-md  hover:bg-black duration-500 hover:text-white
+}

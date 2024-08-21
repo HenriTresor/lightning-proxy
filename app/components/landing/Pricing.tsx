@@ -47,11 +47,11 @@ function Pricing({ }: Props) {
                 className='w-full sm:w-[50%] cursor-pointer'
             />
 
-            <div className='w-full p-5 flex items-cente flex-col-reverse sm:flex-row'>
+            <div className='w-full p-5 flex gap-5 flex-col-reverse sm:flex-row'>
                 <div className='sm:grid grid-cols-2 gap-5'>
                     {
                         plans.map((plan, index) => (
-                            <div key={index} className={`${plan?.pin && ' bg-[#f9b3283b] border-2 border-[#F9B228] rounded-xl'} p-5 w-full sm:w-[67%] flex flex-col gap-5 cursor-pointer `}>
+                            <div key={index} className={`${plan?.pin && ' bg-[#f9b3283b] border-2 border-[#F9B228]  hover:bg-[#f9b3283b] hover:border-[#F9B228]'} rounded-xl p-5 w-full  flex flex-col justify-center gap-5 cursor-pointer  hover:bg-[#1673ff1d]  border-2 border-white hover:border-[#1675FF]`}>
                                 <div className='flex items-center gap-5 '>
                                     <div className='flex flex-col gap-5 text-[0.9rem] '>
                                         <h1 className={`font-bold ${plan.pin && 'text-[#F9B228]'}`}>{plan.time}</h1>
@@ -60,7 +60,7 @@ function Pricing({ }: Props) {
                                     <p className='font-bold'>{plan.price}</p>
                                 </div>
 
-                                <button className={`${plan.pin && 'bg-[#f9b32800] border-2 border-[#F9B228] rounded-xl text-[#5a5a5a]'} bg-[#1673ff27]  text-[#1675FF]`}>
+                                <button className={`${plan.pin && 'bg-[#f9b32800] border-2 border-[#F9B228]  text-[#5a5a5a] hover:text-white hover:bg-[#F9B228]'} rounded-xl bg-[#1673ff27]  text-[#1675FF] hover:text-white hover:bg-[#1675ff] duration-500`}>
                                     Buy Now
                                 </button>
                             </div>
@@ -94,7 +94,7 @@ function Pricing({ }: Props) {
 
                     <div className='flex items-center p-5 border-2 rounded-xl gap-5'>
                         <h1 className='font-bold'>For Any Customer Plans </h1>
-                        <button className='bg-[#1673ff15] font-bold p-2 text-[0.9rem] flex items-center justify-normal gap-4 text-[#1675FF]'>Contact Us <ArrowRight /> </button>
+                        <button className='bg-[#1673ff27]  text-[#1675FF] hover:text-white hover:bg-[#1675ff] duration-500 font-bold p-2 text-[0.9rem] flex items-center justify-normal gap-4 rounded-xl'>Contact Us <ArrowRight /> </button>
 
                     </div>
                 </div>

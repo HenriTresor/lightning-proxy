@@ -44,7 +44,7 @@ function LearnMore({ }: Props) {
                         ))
                     }
                 </ul>
-                <button className='bg-[#1675FF] text-white font-bold rounded-2xl p-4 flex items-center justify-normal gap-4'>Get Started <ArrowRight /> </button>
+                <button className='filled'>Get Started <ArrowRight /> </button>
             </div>
         </div>
     )

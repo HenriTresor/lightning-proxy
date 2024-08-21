@@ -50,7 +50,7 @@ function Faq({ }: Props) {
                 }
 
                 <div className={'w-full grid place-content-center'}>
-                    <button className='p-2 flex items-center gap-4 border-2 rounded-full border-[#1675FF]'>
+                    <button className='p-2 flex items-center gap-4 border-2 rounded-full border-[#1675FF] bg-[#1673ff27]  text-[#1675FF] hover:text-white hover:bg-[#1675ff] duration-500'>
                         Read All FAQs <ChevronRight />
                     </button>
                 </div>
