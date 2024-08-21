@@ -23,8 +23,8 @@ function Footer({ }: Props) {
 
             className="bg-[#F5F7FA] w-full p-10 mt-10"
         >
-            <div className='flex items-center justify-around w-full flex-col sm:flex-row'>
-                <div className='w-full sm:w-[30%] flex flex-col gap-4 p-5'>
+            <div className='flex items-center justify-around w-full flex-col md:flex-row'>
+                <div className='w-full md:w-[30%] flex flex-col gap-4 p-5'>
                     <Image
                         src={'/logo.svg'}
                         width={200}
@@ -44,7 +44,7 @@ function Footer({ }: Props) {
                     />
                 </div>
 
-                <div className='w-full sm:w-[70%] grid grid-cols-2 sm:flex justify-around text-[0.9rem] mt-5'>
+                <div className='w-full md:w-[70%] grid grid-cols-2 md:flex justify-around text-[0.9rem] mt-5'>
                     <div>
                         <h1 className="uppercase text-[#1675FF] font-bold">Account</h1>
                         <ul className="flex flex-col gap-2 mt-4">
@@ -83,7 +83,7 @@ function Footer({ }: Props) {
             <br />
             <hr />
 
-            <div className='w-full flex gap-5 items-center flex-col sm:flex-row justify-between p-4'>
+            <div className='w-full flex gap-5 items-center flex-col md:flex-row justify-between p-4'>
                 <p className='text-[0.7rem]'>Copyright © 2023 LightningProxies All rights reserved.</p>
                 <div className='flex items-center gap-4'>
                     {

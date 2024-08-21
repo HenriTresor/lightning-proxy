@@ -37,18 +37,18 @@ function Pricing({ }: Props) {
                 width={100}
                 height={100}
                 alt='pricing'
-                className='w-full sm:w-[30%]'
+                className='w-full md:w-[30%]'
             />
             <Image
                 src={"/prices.svg"}
                 width={100}
                 height={100}
                 alt={'price'}
-                className='w-full sm:w-[50%] cursor-pointer'
+                className='w-full md:w-[50%] cursor-pointer'
             />
 
-            <div className='w-full p-5 flex gap-5 flex-col-reverse sm:flex-row'>
-                <div className='sm:grid grid-cols-2 gap-5'>
+            <div className='w-full p-5 flex gap-5 flex-col-reverse md:flex-row'>
+                <div className='md:grid grid-cols-2 gap-5'>
                     {
                         plans.map((plan, index) => (
                             <div key={index} className={`${plan?.pin && ' bg-[#f9b3283b] border-2 border-[#F9B228]  hover:bg-[#f9b3283b] hover:border-[#F9B228]'} rounded-xl p-5 w-full  flex flex-col justify-center gap-5 cursor-pointer  hover:bg-[#1673ff1d]  border-2 border-white hover:border-[#1675FF]`}>
@@ -69,7 +69,7 @@ function Pricing({ }: Props) {
                     }
                 </div>
 
-                <div className='w-full sm:w-[30%] flex flex-col gap-5'>
+                <div className='w-full md:w-[30%] flex flex-col gap-5'>
                     <div className=' p-10 rounded-xl flex flex-col gap-2 text-[0.9rem] bg-[#1673ff1d] cursor-pointer border-2 border-white border-[#1675FF] text-[#545454]'>
                         <h1 className='font-bold text-black'>
                             IPv6

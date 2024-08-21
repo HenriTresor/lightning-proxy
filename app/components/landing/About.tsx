@@ -48,10 +48,10 @@ function About({ }: Props) {
         alt={""}
         width={200}
         height={200}
-        className='w-full sm:w-[50%]'
+        className='w-full md:w-[50%]'
       />
 
-      <div className='w-full sm:grid grid-cols-3 p-5 gap-5'>
+      <div className='w-full md:grid grid-cols-3 p-5 gap-5'>
         {
           about.map((item, index) => (
             <div key={index} className=' p-4 rounded-xl flex flex-col gap-2 text-[0.9rem] hover:bg-[#1673ff1d] cursor-pointer border-2 border-white hover:border-[#1675FF]'>

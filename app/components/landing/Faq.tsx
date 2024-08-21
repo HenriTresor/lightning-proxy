@@ -27,7 +27,7 @@ const faqs = [
 function Faq({ }: Props) {
     return (
         <div className='mt-16 flex justify-center w-full'>
-            <div className='w-full sm:w-1/2 border-2 p-5 flex flex-col gap-4 rounded-lg'>
+            <div className='w-full md:w-1/2 border-2 p-5 flex flex-col gap-4 rounded-lg'>
                 <h1 className='text-[#1675FF] font-bold'>FAQs</h1>
                 <h1 className='capitalize text-[1.5rem] font-bold'>All your Questions, Answered</h1>
 

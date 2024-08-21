@@ -23,5 +23,5 @@ button{
 
 
 .outlined {
-  @apply font-bold hidden sm:block p-3 rounded-md  hover:bg-black duration-500 hover:text-white
+  @apply font-bold hidden md:block p-3 rounded-md  hover:bg-black duration-500 hover:text-white
 }

@@ -22,7 +22,7 @@ function Header({ }: Props) {
                 alt='logo'
             />
 
-            <div className='hidden sm:block'>
+            <div className='hidden md:block'>
                 {
                     listItems.map((item, index) => {
                         return (
@@ -37,11 +37,11 @@ function Header({ }: Props) {
             <div className='flex items-center justify-normal gap-4'>
                 <button className='outlined'>Log In</button>
                 <button className='filled'>Get Started <ArrowRight /> </button>
-                <Menu className={'block sm:hidden'} />
-            
+                <Menu className={'block md:hidden'} />
+
             </div>
 
-          
+
         </div>
     )
 }

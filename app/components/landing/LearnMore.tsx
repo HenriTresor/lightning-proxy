@@ -12,21 +12,21 @@ const listItems = [
 
 function LearnMore({ }: Props) {
     return (
-        <div className='w-full mt-16 flex items-center flex-col sm:flex-row justify-center p-10 gap-5'>
+        <div className='w-full mt-16 flex items-center flex-col md:flex-row justify-center p-10 gap-5'>
             <Image
                 src={'/learnmore.svg'}
                 width={100}
                 height={100}
                 alt="learn more"
-                className='w-full sm:w-[60%]'
+                className='w-full md:w-[60%]'
             />
 
-            <div className='w-full sm:w-1/2 flex flex-col gap-6 justify-normal items-start'>
+            <div className='w-full md:w-1/2 flex flex-col gap-6 justify-normal items-start'>
                 <Image
                     src={'/diamond.svg'}
                     width={200}
                     height={200}
-                    className='w-full sm:w-[80%]'
+                    className='w-full md:w-[80%]'
                     alt=''
                 />
 
