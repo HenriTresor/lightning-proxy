@@ -49,7 +49,7 @@ function Footer({ }: Props) {
                         <h1 className="uppercase text-[#1675FF] font-bold">Account</h1>
                         <ul className="flex flex-col gap-2 mt-4">
                             {footerElements.Account.map((element, index) => (
-                                <li className='cursor-pointer'>
+                                <li className='cursor-pointer' key={index}>
                                     {element}
                                 </li>
                             ))}
@@ -60,7 +60,7 @@ function Footer({ }: Props) {
                         <h1 className="uppercase text-[#1675FF] font-bold">Product</h1>
                         <ul className="flex flex-col gap-2 mt-4">
                             {footerElements.Product.map((element, index) => (
-                                <li className='cursor-pointer'>
+                                <li className='cursor-pointer' key={index}>
                                     {element}
                                 </li>
                             ))}
@@ -72,7 +72,7 @@ function Footer({ }: Props) {
                         <h1 className="uppercase text-[#1675FF] font-bold">Explore</h1>
                         <ul className="flex flex-col gap-2 mt-4">
                             {footerElements.Explore.map((element, index) => (
-                                <li className='cursor-pointer'>
+                                <li className='cursor-pointer' key={index}>
                                     {element}
                                 </li>
                             ))}
