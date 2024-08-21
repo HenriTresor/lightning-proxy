@@ -10,12 +10,14 @@ import Footer from "./components/landing/Footer";
 export default function Home() {
   return (
     <div className="w-full h-auto">
-      <Header />
-      <Hero />
-      <About />
-      <Pricing />
-      <LearnMore />
-      <Faq/>
+        <Header />
+     <div className="md:pl-24 md:pr-24 p-0">
+        <Hero />
+        <About />
+        <Pricing />
+        <LearnMore />
+        <Faq />
+     </div>
       <Footer/>
     </div>
   )
